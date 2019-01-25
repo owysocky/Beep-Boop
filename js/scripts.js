@@ -1,10 +1,16 @@
 function replacement(string){
-  var numberArray = string.split("");
-  numberArray.forEach(function(number){
-    if(number === '0'){
-      alert("Beep!")
-    }
-  });
+
+  if (parseInt(string)%3 === 0){
+    alert("I'm sorry, Dave. I'm afraid I can't do that.");
+  } else if (string.includes(1)){
+    alert("Boop!");
+  } else if (string.includes(0)){
+    alert("Beep!");
+  } else {
+    alert(string);
+  }
+
+
 }
 // Numbers that contain a 0 are replaced (all digits) with "Beep!"
 // Numbers that contain a 1 are replaced (all digits) with "Boop!"
@@ -21,3 +27,13 @@ $(document).ready(function() {
 
   });
 });
+
+// numberArray.forEach(function(number){
+//   if (number === '1'){
+//     alert("Boop!");
+//   }
+//
+//   if (number === '0'){
+//     alert("Beep!")
+//   }
+// });
