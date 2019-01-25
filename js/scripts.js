@@ -1,13 +1,17 @@
 function replacement(string){
 
   if (parseInt(string)%3 === 0){
-    alert("I'm sorry, Dave. I'm afraid I can't do that.");
+    return "I'm sorry, Dave. I'm afraid I can't do that.";
   } else if (string.includes(1)){
-    alert("Boop!");
+    return "Boop!";
   } else if (string.includes(0)){
     alert("Beep!");
   } else {
-    alert(string);
+    if (isNaN(string)){
+    return "I am sorry, that is not a number";
+  }else{
+    return string;
+  }
   }
 
 
@@ -22,7 +26,7 @@ $(document).ready(function() {
     var theName = $("input#name").val();
     var theNumber = $("input#number").val();
 
-    replacement(theNumber);
+    alert(replacement(theNumber));
 
 
   });
