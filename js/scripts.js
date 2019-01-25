@@ -1,7 +1,7 @@
-function replacement(string){
+function replacement(string, stringName){
 
   if (parseInt(string)%3 === 0){
-    return "I'm sorry, Dave. I'm afraid I can't do that.";
+    return "I'm sorry, " + stringName + ". I'm afraid I can't do that.";
   } else if (string.includes(1)){
     return "Boop!";
   } else if (string.includes(0)){
@@ -23,8 +23,6 @@ $(document).ready(function() {
     var theName = $("input#name").val();
     var theNumber = $("input#number").val();
 
-    alert(replacement(theNumber));
-
-
+    $("#toggleResult").prepend("<li>"+replacement(theNumber, theName)+"</li>");
   });
 });

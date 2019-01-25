@@ -1,5 +1,10 @@
 .jumbotron{
   text-align: center;
+  background-color: #ffc779;
+}
+.well{
+  background-color: #ffd77a;
+  border: 2px solid #ffc779;
 }
 .row-eq-height {
   display: -webkit-box;
