@@ -11,10 +11,13 @@ _This is a programm  that takes a number from a user and returns a range of numb
 ### Specs
 | Behavior - Plain English | Input | Output |
 | :-------------     | :------------- | :------------- |
+| **Program replaces 1 with "Boop!"** | User input: 1 | Output: Boop!|
 | **Numbers that contain a 0 are replaced (all digits) with "Beep!"** | User input: 20 | Output: Beep!|
 | **Numbers that contain a 1 are replaced (all digits) with "Boop!"**| User input: 10 | Output: Boop!|
-| **Numbers divisible by 3 are replaced with a sentance containing inputed name** | User input: Dave, 3 | Output: I'm sorry, Dave. I'm afraid I can't do that.|
+| **Numbers divisible by 3 are replaced with a sentance containing inputed name** | User input: Dave, 0 | Output: I'm sorry, Dave. I'm afraid I can't do that.|
 | **Non numeric input is replaced with a sentance containing inputed name** | User input: Dave, hello | Output: I'm sorry, Dave, this is not a number!|
+| **Program replaces number divisible by 3 with a string even if it has number 1 and 0 in it** | User input: 201 | Output: I'm afraid I can't do that.|
+| **Program replaces number that contains 1 with "Boop!" even if there's a 0** | User input: 10 | Output: Boop!|
 
 ## Setup instructions
 * _On GitHub, navigate to the main page of the repository._
