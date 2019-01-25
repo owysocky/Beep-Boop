@@ -5,7 +5,7 @@ function replacement(string, stringName, check){
   } else if (string.includes(1)){
     return "Boop!";
   } else if (string.includes(0)){
-    alert("Beep!");
+    return "Beep!";
   } else {
     if (isNaN(string)){
     return "I am sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ", that is not a number";
@@ -28,5 +28,9 @@ $(document).ready(function() {
     var theCheckBox = $("input:checkbox[name=checkBox]:checked").val();
 
     $("#showResult").prepend("<li>"+replacement(theNumber, theName, theCheckBox)+"</li>");
+  });
+
+  $(".clickable").click(function(){
+    $("img").toggle(1000);
   });
 });

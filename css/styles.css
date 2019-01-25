@@ -12,3 +12,18 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.clickable {
+  text-align: right;
+  cursor: pointer;
+  color: blue;
+}
+
+.clickable:hover {
+  text-decoration: underline;
+}
+
+img{
+  display: none;
+  height: 250px;  
+}
