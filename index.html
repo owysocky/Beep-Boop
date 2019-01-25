@@ -21,17 +21,29 @@
         <div class="well col-xs-6 animated fadeInDown delay-1s">
           <h3>Fill out the form:</h3>
           <form id="formOne">
-           <div class="form-group">
+
+            <div class="form-group has-success">
+              <label class="control-label" for="name">Enter your name here:</label>
+              <input type="text" class="form-control" id="name" aria-describedby="helpBlock2">
+              <span id="helpBlock2" class="help-block">Make sure to enter your name here.</span>
+            </div>
+
+           <!-- <div class="form-group">
              <label for="name">Enter your name here:</label>
              <input id="name" class="form-control" type="text">
+           </div> -->
+           <div class="form-group has-success">
+             <label class="control-label" for="number">Enter a number here:</label>
+             <input type="text" class="form-control" id="number" aria-describedby="helpBlock2">
+             <span id="helpBlock2" class="help-block">Make sure to enter a number here.</span>
            </div>
 
-           <div class="form-group">
+           <!-- <div class="form-group">
              <label for="number">Enter a number here:</label>
              <input id="number" class="form-control" type="text">
-           </div>
+           </div> -->
 
-           <input type="checkbox" name="checkBox" value="1"> Check here if you want your number to be reversed in result.<br>
+           <input type="checkbox" name="checkBox" value="1"> Check here if you want your number to be reversed in the result.<br>
 
             <button type="submit" class="btn btn-success btn-lg">Show me!</button>
           </form>

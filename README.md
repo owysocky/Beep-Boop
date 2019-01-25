@@ -19,6 +19,8 @@ _This is a programm  that takes a number from a user and returns a range of numb
 | **Program replaces number divisible by 3 with a string even if it has number 1 and 0 in it** | User input: 201 | Output: I'm afraid I can't do that.|
 | **Program replaces number that contains 1 with "Boop!" even if there's a 0** | User input: 10 | Output: Boop!|
 | **Program reverses number in the output if you check the checkbox** | User input: 347 | Output: 743|
+| **Program outputs a string if the number field is empty** | User input:  | Output: Please, enter a number!|
+| **Program outputs a string if yhe name field is empty** | User input:  | Output: Please, enter your name!|
 
 ## Setup instructions
 * _On GitHub, navigate to the main page of the repository._
