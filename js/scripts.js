@@ -1,4 +1,4 @@
-function replacement(string, stringName){
+function replacement(string, stringName, check){
 
   if (parseInt(string)%3 === 0){
     return "I'm sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ". I'm afraid I can't do that.";
@@ -10,7 +10,11 @@ function replacement(string, stringName){
     if (isNaN(string)){
     return "I am sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ", that is not a number";
   }else{
-    return string;
+    if(check === '1')
+    return string.split("").reverse().join("");
+    else{
+      return string;
+    }
   }
   }
 }
@@ -21,7 +25,8 @@ $(document).ready(function() {
 
     var theName = $("input#name").val();
     var theNumber = $("input#number").val();
+    var theCheckBox = $("input:checkbox[name=checkBox]:checked").val();
 
-    $("#toggleResult").prepend("<li>"+replacement(theNumber, theName)+"</li>");
+    $("#showResult").prepend("<li>"+replacement(theNumber, theName, theCheckBox)+"</li>");
   });
 });

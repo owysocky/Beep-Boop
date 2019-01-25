@@ -1,16 +1,12 @@
-# _Beep Boop peach addition_
+# _Beep Boop_
 
-#### _Beep Boop 1/25/2019_
+#### _Beep Boop peach addition 1/25/2019_
 
 #### By _**Olha Wysocky**_
 
 ## Description
 
 _This is a programm  that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the exceptions that are described in Specs._
-
-* _Numbers that contain a 0 are replaced (all digits) with "Beep!"_
-* _Numbers that contain a 1 are replaced (all digits) with "Boop!"_
-* _Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
 
 ### Specs
 | Behavior - Plain English | Input | Output |
