@@ -12,9 +12,14 @@ function replacement(string, stringName, check){
         if (isNaN(string)){
         return "I am sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ", that is not a number";
       }else{
-        if(check === '1')
-        return string.split("").reverse().join("");
-        else{
+        if(check === '1'){
+          var arrayNumbers = string.split("");
+          var a ="";
+          for (var i=arrayNumbers.length-1; i>=0; i--){
+          a += arrayNumbers[i];
+          };
+          return a;
+        }else{
           return string;
         }
       }
