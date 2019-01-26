@@ -14,11 +14,11 @@ function replacement(string, stringName, check){
       }else{
         if(check === '1'){
           var arrayNumbers = string.split("");
-          var a ="";
+          var reversedArray ="";
           for (var i=arrayNumbers.length-1; i>=0; i--){
-          a += arrayNumbers[i];
+          reversedArray += arrayNumbers[i];
           };
-          return a;
+          return reversedArray;
         }else{
           return string;
         }
