@@ -20,6 +20,7 @@ _This is a programm  that takes a number from a user and returns a range of numb
 | **Program reverses number in the output if you check the checkbox** | User input: 347 | Output: 743|
 | **Program outputs a string if the number field is empty** | User input:  | Output: Please, enter a number!|
 | **Program outputs a string if the name field is empty** | User input:  | Output: Please, enter your name!|
+| **Program outputs a range of numbers from 0 to the user inputted number** | User input: 3  | Output: "Beep!", "Boop!", 2, "I'm Sorry..."|
 
 ## Setup instructions
 * _On GitHub, navigate to the main page of the repository._
