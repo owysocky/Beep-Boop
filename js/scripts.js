@@ -1,9 +1,12 @@
 function replacement(string, stringName, check){
-
   if (stringName){
     if (string){
       if (parseInt(string)%3 === 0){
-        return "I'm sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ". I'm afraid I can't do that.";
+        if(string.includes(0)){
+          return "Beep!";
+        } else {
+          return "I'm sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ". I'm afraid I can't do that.";
+        }
       } else if (string.includes(1)){
         return "Boop!";
       } else if (string.includes(0)){
@@ -39,8 +42,12 @@ $(document).ready(function() {
     var theName = $("input#name").val();
     var theNumber = $("input#number").val();
     var theCheckBox = $("input:checkbox[name=checkBox]:checked").val();
+    var parseIntNumber = parseInt($("input#number").val());
 
-    $("#showResult").prepend("<li>"+replacement(theNumber, theName, theCheckBox)+"</li>");
+    var i;
+    for(i=0; i<=parseIntNumber; i++){
+      $("#showResult").append("<li>"+replacement(i.toString(), theName, theCheckBox)+"</li>");
+    }
   });
 
   $(".clickable").click(function(){
