@@ -2,7 +2,7 @@ function replacement(string, stringName, check){
   if (stringName){
     if (string){
       if (parseInt(string)%3 === 0){
-        if(string.includes(0)){
+        if(parseInt(string) === 0){
           return "Beep!";
         } else {
           return "I'm sorry, " + stringName.charAt(0).toUpperCase()+stringName.slice(1) + ". I'm afraid I can't do that.";
@@ -40,7 +40,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     var theName = $("input#name").val();
-    var theNumber = $("input#number").val();
     var theCheckBox = $("input:checkbox[name=checkBox]:checked").val();
     var parseIntNumber = parseInt($("input#number").val());
 
